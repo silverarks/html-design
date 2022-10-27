@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+      integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="navigation">
+      <ul>
+        <li>
+          <a href="#DWM">
+            <span class="icon"><i class="fa fa-bar-chart" aria-hidden="true"></i></span>
+            <span class="title">Day / Week / Month</span>
+          </a>
+        </li>
+        <li>
+          <a href="#ARIMA">
+            <span class="icon"><i class="fa fa-bar-chart" aria-hidden="true"></i></span>
+            <span class="title">ARIMA</span>
+          </a>
+        </li>
+        <li>
+          <a href="#4-Total">
+            <span class="icon"><i class="fa fa-bar-chart" aria-hidden="true"></i></span>
+            <span class="title">4개 총합</span>
+          </a>
+        </li>
+        <li>
+          <a href="#XGBoost">
+            <span class="icon"><i class="fa fa-bar-chart" aria-hidden="true"></i></span>
+            <span class="title">XG Boost</span>
+          </a>
+        </li>
+        <li>
+          <a href="#LSTM">
+            <span class="icon"><i class="fa fa-bar-chart" aria-hidden="true"></i></span>
+            <span class="title">LSTM(RNN)</span>
+          </a>
+        </li>
+        <li>
+          <a href="#BiLSTM">
+            <span  class="icon"><i class="fa fa-bar-chart" aria-hidden="true"></i></span>
+            <span class="title">Bi LSTM</span>
+          </a>
+        </li>
+        <li>
+          <a href="#GRU">
+            <span class="icon"><i class="fa fa-bar-chart" aria-hidden="true"></i></span>
+            <span class="title">GR=U</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+
+    <div class="main">
+      <div>
+        <form method="post" enctype="multipart/form-data">
+          <div class="form__file">
+            <div class="form__file--label">
+              <label class="form__file--input__button" for="file">파일 선택</label>
+              <input
+                type="file"
+                id="file"
+                name="file"
+                accept=".xlsx, .xls, .csv"
+              />
+            </div>
+            <div>
+              <button class="upload_button"><span>업로드</span></button>
+            </div>
+          </div>
+        </form>
+      </div>
+      
+      <div id="DWM" class="header_box">
+        <span>Day / Week / Month</span>
+      </div>
+      <div class="content_box">
+        <div class="select_bar">
+          <select name="" id="">
+            <option value=""></option>
+            <option value="">Day</option>
+            <option value="">Week</option>
+            <option value="">Month</option>
+          </select>
+        </div>
+        <div class="graph">
+          <div class="test"></div>
+        </div>
+      </div>
+      <div class="sub_box">
+        <p>들어갈내용
+        </p>
+      </div>
+      <div id="ARIMA" class="header_box">
+        <span>ARIMA</span>
+      </div>
+      <div class="content_box">
+        <div class="select_bar">
+          <select name="" id="">
+            <option value=""></option>
+            <option value="">ARIMA-1</option>
+            <option value="">ARIMA-2</option>
+            <option value="">ARIMA-3</option>
+            <option value="">ARIMA-4</option>
+          </select>
+        </div>
+        <div class="graph">
+          <div class="test"></div>
+        </div>
+      </div>
+      <div class="sub_box"></div>
+      <div id="4-Total" class="header_box">
+        <span>4개 총합</span>
+      </div>
+      <div class="content_box">
+        <div class="select_bar">
+          <select name="" id="">
+            <option value=""></option>
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+          </select>
+        </div>
+        <div class="graph">
+          <div class="test"></div>
+        </div>
+      </div>
+      <div class="sub_box"></div>
+      <div id="XGBoost" class="header_box">
+        <span>XG Boost</span>
+      </div>
+      <div class="content_box">
+        <div class="select_bar">
+          <select name="" id="">
+            <option value=""></option>
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4</option>
+            <option value="">5</option>
+          </select>
+        </div>
+        <div class="graph">
+          <div class="test"></div>
+        </div>
+      </div>
+      <div class="sub_box"></div>
+      <div id="LSTM" class="header_box">
+        <span>LSTM(RNN)</span>
+      </div>
+      <div class="content_box">
+        <div class="select_bar">
+          <select name="" id="">
+            <option value=""></option>
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4</option>
+            <option value="">5</option>
+          </select>
+        </div>
+        <div class="graph">
+          <div class="test"></div>
+        </div>
+      </div>
+      <div class="sub_box"></div>
+      <div id="BiLSTM" class="header_box">
+        <span>Bi LSTM</span>
+      </div>
+      <div class="content_box">
+        <div class="select_bar">
+          <select name="" id="">
+            <option value=""></option>
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4</option>
+            <option value="">5</option>
+          </select>
+        </div>
+        <div class="graph">
+          <div class="test"></div>
+        </div>
+      </div>
+      <div class="sub_box"></div>
+      <div id="GRU" class="header_box">
+        <span>GR=U</span>
+      </div>
+      <div class="content_box">
+        <div class="select_bar">
+          <select name="" id="">
+            <option value=""></option>
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4</option>
+            <option value="">5</option>
+          </select>
+        </div>
+        <div class="graph">
+          <div class="test"></div>
+        </div>
+      </div>
+      <div class="sub_box"></div>
+    </div>
+    <a class="gotop-btn" href="#">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+    
+    <script src="index.js"></script>
+  </body>
+</html>
